@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "id": "R0003",
+      "title": "RAM DDR 2 1GB",
+      "cost": 2500
+    },
+    {
+      "id": "R0009",
+      "title": "RAM 1 GC DDR1",
+      "cost": "3520"
+    }
+  ]
+}

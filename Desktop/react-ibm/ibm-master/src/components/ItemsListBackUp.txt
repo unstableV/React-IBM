@@ -1,0 +1,37 @@
+import React, { Component } from 'react';
+
+class ItemsList extends Component {
+    constructor() {
+        super();
+        console.log("Component Got Created")
+        this.state = {
+            count:0
+        }
+    }
+
+    componentDidMount = () => {
+        console.log("Component Got Mounted");
+        this.setState({count:-1});
+    }
+
+    componentDidUpdate = () => {
+        console.log("Component Got Updated")
+    }
+
+    increaseCount = () => {
+        this.setState({count:this.state.count+1});
+    }
+
+    render = () => {
+        console.log("Component Got Rended")
+        return (
+            <div className="container-fluid p-4">
+                <h3 className="border border-bottom-1">ItemsList</h3>
+                <h2>{this.state.count}</h2>
+                <button onClick={this.increaseCount}>Increment</button>
+            </div>
+        );
+    }
+}
+
+export default ItemsList;
